@@ -1,0 +1,36 @@
+.chatLayoutContainer {
+  display: flex;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  background-color: white;
+  margin: 20px auto 0 auto;
+}
+
+.chatArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  width: 300px;
+  border-right: 1px solid #ddd;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.placeholder {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 1.2rem;
+  font-style: italic;
+  padding: 20px;
+  width: 100%;
+}

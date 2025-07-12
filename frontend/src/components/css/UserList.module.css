@@ -1,0 +1,79 @@
+.userListContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* position: relative; */
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.header {
+  padding-bottom: 10px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.toggleContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.toggle,
+.activeToggle {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle {
+  background-color: #eee;
+  color: #333;
+}
+
+.activeToggle {
+  background-color: #FF7043;
+  color: #fff;
+}
+
+.userList {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 0;
+  margin: 10px 0;
+  list-style: none;
+}
+
+.userItem {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.activeItem {
+  background-color: #e0f0ff;
+  font-weight: bold;
+}
+
+.footer {
+  padding-top: 10px;
+}
+
+.createGroupButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #FF7043;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

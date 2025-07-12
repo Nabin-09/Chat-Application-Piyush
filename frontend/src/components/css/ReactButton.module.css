@@ -1,0 +1,24 @@
+.reactContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.reactBtn {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 2px;
+  margin-left: 8px;
+}
+
+.emojiPickerWrapper {
+  position: absolute;
+  right: 0;
+  z-index: 999;
+}
+
+.reactionList {
+  display: block;
+  margin-top: 4px;
+}
