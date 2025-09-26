@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from '../css/HomePage.module.css';
-import Image from '../../assets/image.jpg';
+import Image from '../../assets/Image.jpg';
 
 function HomePage() {
   const navigate = useNavigate();
