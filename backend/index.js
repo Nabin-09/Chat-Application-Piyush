@@ -22,7 +22,9 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: process.env.NODE_ENV === 'production' 
+      ? process.env.FRONTEND_URL || "*"
+      : "http://localhost:5173",
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true
   }
@@ -241,7 +243,9 @@ app.use((req, res, next) => {
 });
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: process.env.NODE_ENV === 'production' 
+    ? process.env.FRONTEND_URL || "*"
+    : 'http://localhost:5173',
   methods: ['GET', 'POST', 'DELETE', 'PUT'],
   credentials: true
 }));
@@ -261,8 +265,7 @@ app.get('/', (req, res) => {
   res.send("🚀 Backend is working!");
 });
 
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 server.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
-
